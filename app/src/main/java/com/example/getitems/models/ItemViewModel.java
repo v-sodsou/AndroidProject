@@ -22,25 +22,21 @@ public class ItemViewModel {
     /**
      * A map of sample (dummy) items, by ID.
      */
-    public static final Map<String, ItemModel> ITEM_MAP = new HashMap<String, ItemModel>();
+    public static final Map<String,ItemModel> ITEM_MAP = new HashMap<String, ItemModel>();
 
     private static final int COUNT = 25;
 
     static {
-        // Add some sample items.
-//        for (int i = 1; i <= COUNT; i++) {
-//            addItem(createDummyItem(i));
-//        }
+        addItem(new ItemModel("Shield", "Metallic shield", 0, 0, 1,"shield"));
+        addItem(new ItemModel("Umbrella", "Cool shield", 1, 0, 2,"umbrella"));
+        addItem(new ItemModel("Bowcaster", "Strong bow", 2, 0, 2,"bowcaster"));
+
     }
 
     private static void addItem(ItemModel item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
-
-//    private static ItemModel createDummyItem(int position) {
-//        return new ItemModel(String.valueOf(position), "Item " + position, makeDetails(position));
-//    }
 
     private static String makeDetails(int position) {
         StringBuilder builder = new StringBuilder();
