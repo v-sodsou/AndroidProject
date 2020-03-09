@@ -29,7 +29,7 @@ public class ItemModelDetailFragment extends Fragment {
     /**
      * The dummy content this fragment is presenting.
      */
-    private ItemViewModel.DummyItem mItem;
+    private ItemViewModel.ItemModel mItem;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
