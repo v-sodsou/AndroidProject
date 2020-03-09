@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //Todo
+                Context context = view.getContext();
+                Intent intent = new Intent(context, ItemModelListActivity.class);
+                context.startActivity(intent);
             }
         });
     }
