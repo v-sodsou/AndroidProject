@@ -2,4 +2,13 @@
     <string name="app_name">GetItems</string>
     <string name="title_itemmodel_list">Items</string>
     <string name="title_itemmodel_detail">ItemModel Detail</string>
+    <string name="Unknown">Unknown</string>
+    <string name="Head">Head</string>
+    <string name="Necklace">Necklass</string>
+    <string name="PrimaryHand">Primary Hand</string>
+    <string name="OffHand">Off Hand</string>
+    <string name="AnyFinger">Any Finger</string>
+    <string name="RightFinger">Right Finger</string>
+    <string name="LeftFinger">Left Finger</string>
+    <string name="Feet">Feet</string>
 </resources>
