@@ -1,4 +1,4 @@
-package com.example.getitems.dummy;
+package com.example.getitems.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
