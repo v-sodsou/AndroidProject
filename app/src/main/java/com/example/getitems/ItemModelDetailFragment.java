@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.example.getitems.models.ItemViewModel;
 
 /**
@@ -50,9 +51,9 @@ public class ItemModelDetailFragment extends Fragment {
 
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
-            if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.content);
-            }
+//            if (appBarLayout != null) {
+//                appBarLayout.setTitle(mItem.content);
+//            }
         }
     }
 
@@ -62,9 +63,9 @@ public class ItemModelDetailFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.itemmodel_detail, container, false);
 
         // Show the dummy content as text in a TextView.
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.itemmodel_detail)).setText(mItem.details);
-        }
+//        if (mItem != null) {
+//            ((TextView) rootView.findViewById(R.id.itemmodel_detail)).setText(mItem.details);
+//        }
 
         return rootView;
     }
