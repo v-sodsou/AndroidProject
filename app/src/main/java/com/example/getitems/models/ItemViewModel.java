@@ -59,6 +59,7 @@ public class ItemViewModel {
         public final int Damage;
         public final int Value;
         public final String ImageURI;
+        public final ItemLocationEnum Location;
 
 
         public ItemModel(String name, String description, int range, int damage, int value, String uri, ItemLocationEnum location) {
@@ -68,6 +69,7 @@ public class ItemViewModel {
             this.Damage = damage;
             this.Value = value;
             this.ImageURI = uri;
+            this.Location = location;
         }
 
         @Override
