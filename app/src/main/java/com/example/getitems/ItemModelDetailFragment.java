@@ -2,17 +2,15 @@ package com.example.getitems;
 
 import android.app.Activity;
 import android.os.Bundle;
-
-import com.google.android.material.appbar.CollapsingToolbarLayout;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.getitems.models.ItemViewModel;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A fragment representing a single ItemModel detail screen.
@@ -62,10 +60,14 @@ public class ItemModelDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.itemmodel_detail, container, false);
 
-        // Show the dummy content as text in a TextView.
-//        if (mItem != null) {
-//            ((TextView) rootView.findViewById(R.id.itemmodel_detail)).setText(mItem.details);
-//        }
+        // Show the item attributes as text in the layout.
+        if (mItem != null) {
+            ((TextView) rootView.findViewById(R.id.ItemDetails_NameValue)).setText(mItem.Name);
+            ((TextView) rootView.findViewById(R.id.ItemDetails_DescriptionValue)).setText(mItem.Description);
+            ((TextView) rootView.findViewById(R.id.ItemDetails_RangeValue)).setText(String.valueOf(mItem.Range));
+            ((TextView) rootView.findViewById(R.id.ItemDetails_ValueValue)).setText(String.valueOf(mItem.Value));
+            ((TextView) rootView.findViewById(R.id.ItemDetails_DamageValue)).setText(String.valueOf(mItem.Damage));
+        }
 
         return rootView;
     }
