@@ -27,7 +27,7 @@ public class ItemViewModel {
     private static final int COUNT = 25;
 
     static {
-        addItem(new ItemModel("Shield", "Metallic shield", 0, 0, 1,"shield",ItemLocationEnum.Head, AttributeEnum.Defense));
+        addItem(new ItemModel("Head Shield", "Metallic shield", 0, 0, 1,"shield",ItemLocationEnum.Head, AttributeEnum.Defense));
         addItem(new ItemModel("Umbrella", "Cool shield", 1, 0, 2,"umbrella",ItemLocationEnum.OffHand, AttributeEnum.Speed ));
         addItem(new ItemModel("Lightsaber", "Jedi weapon", 2, 0, 2,"lightsaber",ItemLocationEnum.Finger, AttributeEnum.Attack));
     }
