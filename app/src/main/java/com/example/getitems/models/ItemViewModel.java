@@ -29,23 +29,13 @@ public class ItemViewModel {
     static {
         addItem(new ItemModel("Shield", "Metallic shield", 0, 0, 1,"shield",ItemLocationEnum.Head, AttributeEnum.Defense));
         addItem(new ItemModel("Umbrella", "Cool shield", 1, 0, 2,"umbrella",ItemLocationEnum.OffHand, AttributeEnum.Speed ));
-        addItem(new ItemModel("Bowcaster", "Strong bow", 2, 0, 2,"bowcaster",ItemLocationEnum.PrimaryHand, AttributeEnum.Attack));
-
+        addItem(new ItemModel("Lightsaber", "Jedi weapon", 2, 0, 2,"lightsaber",ItemLocationEnum.Finger, AttributeEnum.Attack));
     }
 
     private static void addItem(ItemModel item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
-
-//    private static String makeDetails(int position) {
-//        StringBuilder builder = new StringBuilder();
-//        builder.append("Details about Item: ").append(position);
-//        for (int i = 0; i < position; i++) {
-//            builder.append("\nMore details information here.");
-//        }
-//        return builder.toString();
-//    }
 
     /**
      * A dummy item representing a piece of content.
