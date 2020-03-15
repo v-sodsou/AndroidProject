@@ -1,5 +1,6 @@
 package com.example.getitems.models;
 
+import com.example.getitems.GlobalModel;
 import com.example.getitems.R;
 
 import java.util.ArrayList;
@@ -41,25 +42,25 @@ public enum ItemLocationEnum {
     public String toString() {
         switch(this){
             case Unknown:
-                return getString(R.string.Unknown);
+                return GlobalModel.MainActivityContext.getString(R.string.Unknown);
             case Head:
-                return getString(R.string.Head);
+                return GlobalModel.MainActivityContext.getString(R.string.Head);
             case Necklass:
-                return getString(R.string.Necklace);
+                return GlobalModel.MainActivityContext.getString(R.string.Necklace);
             case PrimaryHand:
-                return getString(R.string.PrimaryHand);
+                return GlobalModel.MainActivityContext.getString(R.string.PrimaryHand);
             case OffHand:
-                return getString(R.string.OffHand);
+                return GlobalModel.MainActivityContext.getString(R.string.OffHand);
             case Finger:
-                return getString(R.string.AnyFinger);
+                return GlobalModel.MainActivityContext.getString(R.string.AnyFinger);
             case RightFinger:
-                return getString(R.string.RightFinger);
+                return GlobalModel.MainActivityContext.getString(R.string.RightFinger);
             case LeftFinger:
-                return getString(R.string.LeftFinger);
+                return GlobalModel.MainActivityContext.getString(R.string.LeftFinger);
             case Feet:
-                return getString(R.string.Feet);
+                return  GlobalModel.MainActivityContext.getString(R.string.Feet);
         }
-        return getString(R.string.Unknown);
+        return GlobalModel.MainActivityContext.getString(R.string.Unknown);
     }
 
     private int intValue;
