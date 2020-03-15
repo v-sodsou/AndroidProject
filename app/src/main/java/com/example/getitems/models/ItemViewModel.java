@@ -27,9 +27,9 @@ public class ItemViewModel {
     private static final int COUNT = 25;
 
     static {
-        addItem(new ItemModel("Shield", "Metallic shield", 0, 0, 1,"shield",ItemLocationEnum.Head));
-        addItem(new ItemModel("Umbrella", "Cool shield", 1, 0, 2,"umbrella",ItemLocationEnum.PrimaryHand));
-        addItem(new ItemModel("Bowcaster", "Strong bow", 2, 0, 2,"bowcaster",ItemLocationEnum.PrimaryHand));
+        addItem(new ItemModel("Shield", "Metallic shield", 0, 0, 1,"shield",ItemLocationEnum.Head, AttributeEnum.Defense));
+        addItem(new ItemModel("Umbrella", "Cool shield", 1, 0, 2,"umbrella",ItemLocationEnum.OffHand, AttributeEnum.Speed ));
+        addItem(new ItemModel("Bowcaster", "Strong bow", 2, 0, 2,"bowcaster",ItemLocationEnum.PrimaryHand, AttributeEnum.Attack));
 
     }
 
@@ -60,9 +60,10 @@ public class ItemViewModel {
         public final int Value;
         public final String ImageURI;
         public final ItemLocationEnum Location;
+        public final AttributeEnum Attribute;
 
 
-        public ItemModel(String name, String description, int range, int damage, int value, String uri, ItemLocationEnum location) {
+        public ItemModel(String name, String description, int range, int damage, int value, String uri, ItemLocationEnum location, AttributeEnum attribute) {
             this.Name = name;
             this.Description = description;
             this.Range = range;
@@ -70,6 +71,7 @@ public class ItemViewModel {
             this.Value = value;
             this.ImageURI = uri;
             this.Location = location;
+            this.Attribute = attribute;
         }
 
         @Override
