@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pageBackgroundcolor"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/LabelStyle"
+        android:textSize="20sp"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
         android:text="Sonali D'souza"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,8 +32,7 @@
     <Button
         android:id="@+id/button2"
         android:text="Begin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        style="@style/ButtonStyle"/>
 
     </LinearLayout>
 
